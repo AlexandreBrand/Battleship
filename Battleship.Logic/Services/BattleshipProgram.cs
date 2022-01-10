@@ -1,5 +1,6 @@
 ﻿using System;
 using Battleship.Logic.Interfaces;
+using Battleship.Logic.Static;
 
 namespace Battleship.Logic.Services
 {
@@ -13,7 +14,7 @@ namespace Battleship.Logic.Services
 
         public void Run()
         {
-            _communicator.Write("");
+            _communicator.Write(StaticStrings.WelcomeMessage);
         }
     }
 }
