@@ -11,5 +11,11 @@ namespace Battleship.Tests
         {
             Program.Main(Array.Empty<string>());
         }
+
+        [TestMethod]
+        public void SayWelcomeToBattleshipOnStartup()
+        {
+
+        }
     }
 }

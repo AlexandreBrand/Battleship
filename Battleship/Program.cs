@@ -1,12 +1,17 @@
 ﻿using System;
+using Battleship.Logic.Interfaces;
+using Battleship.Logic.Services;
 
 namespace Battleship
 {
     public class Program
     {
+        private static IBattleshipProgram _battleshipProgram;
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            _battleshipProgram = new BattleshipProgram();
+            _battleshipProgram.Run();
         }
     }
+
 }
