@@ -22,7 +22,7 @@ namespace Battleship.Logic.Tests.Interfaces
         public void Runs_ThenCommunicatorisCalled()
         {
             _program.Run();
-            _commMock.Verify(x => x.Write(), Times.Once);
+            _commMock.Verify(x => x.Write(It.IsAny<string>()), Times.Once);
         }
     }
 }

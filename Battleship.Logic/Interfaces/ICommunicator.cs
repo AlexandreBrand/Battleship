@@ -2,6 +2,6 @@
 {
     public interface ICommunicator
     {
-        
+        void Write(string str);
     }
 }

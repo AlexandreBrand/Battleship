@@ -9,7 +9,7 @@ namespace Battleship
         private static IBattleshipProgram _battleshipProgram;
         public static void Main(string[] args)
         {
-            _battleshipProgram = new BattleshipProgram();
+            _battleshipProgram = new BattleshipProgram(new Communicator());
             _battleshipProgram.Run();
         }
     }
