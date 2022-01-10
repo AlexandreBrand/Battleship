@@ -7,7 +7,6 @@ namespace Battleship.Logic.Services
     {
         public void Run()
         {
-            throw new NotImplementedException();
         }
     }
 }
