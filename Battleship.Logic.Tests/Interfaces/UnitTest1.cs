@@ -22,7 +22,6 @@ namespace Battleship.Logic.Tests
         public void Runs_ThenCommunicatorisCalled()
         {
             _program.Run();
-
         }
     }
 }
