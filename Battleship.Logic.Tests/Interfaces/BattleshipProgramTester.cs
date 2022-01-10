@@ -19,13 +19,13 @@ namespace Battleship.Logic.Tests.Interfaces
         }
 
         [TestMethod]
-        public void Runs_ThenCommunicatorisCalled()
+        public void Runs_ThenCommunicatorIsCalled()
         {
             _program.Run();
             _commMock.Verify(x => x.Write(It.IsAny<string>()), Times.Once);
         }
         [TestMethod]
-        public void Runs_ThenCommunicatorisCalledWithWelcomeMessage()
+        public void Runs_ThenCommunicatorIsCalledWithWelcomeMessage()
         {
             _program.Run();
             _commMock.Verify(x => x.Write(StaticStrings.WelcomeMessage), Times.Once);
