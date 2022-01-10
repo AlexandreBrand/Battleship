@@ -1,4 +1,5 @@
-﻿using Battleship.Logic.Interfaces;
+﻿using System;
+using Battleship.Logic.Interfaces;
 
 namespace Battleship.Logic.Services
 {
@@ -6,7 +7,7 @@ namespace Battleship.Logic.Services
     {
         public void Write(string str)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine(str);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Battleship.Logic.Tests.Interfaces
     {
         private BattleshipProgram _program;
         private Mock<ICommunicator> _commMock;
-
+        const string welcomeMessage = "Welcome to Battleship";
 
         public BattleshipProgramTester()
         {
@@ -23,6 +23,12 @@ namespace Battleship.Logic.Tests.Interfaces
         {
             _program.Run();
             _commMock.Verify(x => x.Write(It.IsAny<string>()), Times.Once);
+        }
+        [TestMethod]
+        public void Runs_ThenCommunicatorisCalledWithWelcomeMessage()
+        {
+            _program.Run();
+            _commMock.Verify(x => x.Write(welcomeMessage), Times.Once);
         }
     }
 }
