@@ -3,7 +3,7 @@ using Battleship.Logic.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
-namespace Battleship.Logic.Tests
+namespace Battleship.Logic.Tests.Interfaces
 {
     [TestClass]
     public class BattleshipProgramTester
@@ -22,6 +22,7 @@ namespace Battleship.Logic.Tests
         public void Runs_ThenCommunicatorisCalled()
         {
             _program.Run();
+            _commMock.Verify(x => x.Write(), Times.Once);
         }
     }
 }
