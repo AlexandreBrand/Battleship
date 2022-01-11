@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text;
-
-namespace Battleship.Logic.Interfaces
+﻿namespace Battleship.Logic.Interfaces
 {
     public interface IBattleshipProgram
     {
