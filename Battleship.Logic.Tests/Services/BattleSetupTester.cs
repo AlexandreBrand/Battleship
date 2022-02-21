@@ -12,7 +12,7 @@ namespace Battleship.Logic.Tests.Services
         [TestMethod]
         public void PlaceBoats_WithEmptyRequiredShipsList_ThenEmptyBoatList()
         {
-            Assert.AreEqual(0, _battleSetup.PlaceBoats(null,0, new List<int>()));
+            Assert.AreEqual(0, _battleSetup.PlaceBoats(null,0, new List<int>()).Count);
         }
     }
 }
