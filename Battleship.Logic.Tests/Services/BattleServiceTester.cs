@@ -51,4 +51,10 @@ namespace Battleship.Logic.Tests.Services
             _roundManagerMock.Verify(x => x.DoTurn(It.IsAny<Player>()), Times.Once);
         }
     }
+
+    [TestClass]
+    public class BattleSetupTester
+    {
+
+    }
 }
