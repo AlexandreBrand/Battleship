@@ -7,6 +7,7 @@ namespace Battleship.Logic.Interfaces
     {
         public List<Ship> PlaceBoats(Player p1, int gridSize, List<int> requiredShips)
         {
+            return null;
         }
     }
 }
